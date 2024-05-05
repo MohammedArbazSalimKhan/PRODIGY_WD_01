@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resposive Landing Page</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #dcd81e;
+    width: 100%; /* Adjust the width as needed */
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: colorChange 5s infinite alternate; /* Apply animation */
+  }
+  
+  .photo-card img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%; /* Make it round */
+    margin-right: 20px;
+  }
+  
+  /* Keyframes for color change */
+  @keyframes colorChange {
+    0% {
+      background-color: #dcd81e; /* Initial color */
+    }
+    100% {
+      background-color: #1eb567; /* Final color */
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#" class="logo"><img src="images/logo.png" alt="Your Logo"></a></li>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Contact">Contact</a></li>
+    <li><a href="#Portfolio">Portfolio</a></li>
+    <li><a href="#Feedback">Feedback</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="container" align="center">
+    <section id="Home">
+      <h2>Hello, Welcome to My Responsive Landing page 😊 !!!!!</h2>
+      <p>This is my Home page. I created this page as my first task at Prodigy InfoTech.</p>
+    </section>
+      
+    <section id="About">
+      <h2>About page</h2>
+      <p>This is my About page of my navbar</p>
+    </section>
+      
+    <section id="Contact">
+      <h2>Contact Us</h2>
+      <p>Contact information and form.</p>
+    </section>
+      
+    <section id="Portfolio">
+      <h2>My Portfolio</h2>
+      <p>This is my Portfolio page.</p>
+    </section>
+      
+    <section id="Feedback">
+      <h2>Feedback page</h2>
+      <p>This is my Feedback page.</p>
+    </section>
+  </div>
+</main>
+
+<footer>
+<div class="container" align="center" id="Portfolio">
+  <div class="card photo-card">
+    <img src="images/me.jpg" alt="Your Photo">
+    <div>
+      <h3>Mohammed Arbaz Salim Khan</h3>
+      <p>M.Sc-Information Technology [2024]</p>
+      <p>Patkar Varde College</p>
+      <p>Web Developer</p>
+      <p>Intern at Prodigy InfoTech</p>
+      <a href="https://drive.google.com/file/d/1e7zKF9BFph0_XqurPzzoQIyMAZxqxHam/view?usp=sharing" ><h3>Resume</h3></a>
+    </div>
+  </div>
+</div>
+<p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

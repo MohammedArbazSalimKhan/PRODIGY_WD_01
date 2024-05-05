@@ -1,0 +1,157 @@
+/* Navigation Bar */
+.navbar {
+  background-color: #5eb31d; /* Dark blue background */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+
+body {
+  background-color: #c1c1bb; /* Light gray background color */
+}
+
+
+/* Logo */
+.logo {
+  color: #fff; /* White logo text */
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+  height: 30px;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  margin: 10;
+  padding: 10;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff; /* White link text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #98e917; /* Darker blue background on hover */
+  color: #2a9128; /* Lighter blue text on hover */
+  transition: 0.3s ease-in-out;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.dropdown-toggle:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid #fff;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown.hover .dropdown-toggle:after {
+  transform: rotate(180deg);
+}
+
+.developer-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.developer-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.developer-card ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.developer-card ul li a.logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.developer-card ul li a.logo img {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  border-radius: 50%; /* Make it round */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+/* Add specific styles for each section */
+#Home h2 {
+  color: #1eb567; /* Green color for Home section heading */
+}
+
+#About h2 {
+  color: #ff8c00; /* Orange color for About section heading */
+}
+
+#Contact h2 {
+  color: #d94c4c; /* Red color for Contact section heading */
+}
+
+#Portfolio h2 {
+  color: #6a5acd; /* Purple color for Portfolio section heading */
+}
+
+#Feedback h2 {
+  color: #4682b4; /* Blue color for Feedback section heading */
+}
